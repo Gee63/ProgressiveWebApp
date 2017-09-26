@@ -1,0 +1,57 @@
+{
+"name":"Instagram PWA",               //long name of app ( eg : splash screen)
+  "short_name": "PWAGram",           //Shrot name of app ( eg : below icon)
+  "start_url": "/index.html",       //what url the home icon will launch
+  "scope": ".",                     //what files will be part of the PWA . "." means all
+  "display":"standalone",           //make the page look more like an app by removing the address bar etc. "fullscreen" removes all toolbars. "minimal-ui". "browser". "standalone" is the most common for PWA
+  "background_color":"#fff",
+  "theme_color": "#3f51b5",
+  "description": "fallback description browser will use to tell ppl about your app",
+  "dir":"ltr",                      //read direction. rtl is avaialble for reading for right to left
+  "lang": "en-US",
+  "orientation": "portrait-primary", //force orientation
+  "icons":[
+    {
+    "src":"/src/images/icons/app-icon-48x48.png",
+    "type":"image/png",
+    "sizes":"48x48"
+  },
+    {
+      "src":"/src/images/icons/app-icon-96x96.png",
+      "type":"image/png",
+      "sizes":"96x96"
+    },
+    {
+      "src":"/src/images/icons/app-icon-144x144.png",
+      "type":"image/png",
+      "sizes":"144x144"
+    },                                                      //give list of available icons at different size so page can choose best one for the device.
+    {
+      "src":"/src/images/icons/app-icon-192x192.png",
+      "type":"image/png",
+      "sizes":"192x192"
+    },
+    {
+      "src":"/src/images/icons/app-icon-256x256.png",
+      "type":"image/png",
+      "sizes":"256x256"
+    },
+    {
+      "src":"/src/images/icons/app-icon-384x384.png",
+      "type":"image/png",
+      "sizes":"384x384"
+    },
+    {
+      "src":"/src/images/icons/app-icon-512x512.png",
+      "type":"image/png",
+      "sizes":"512x512"
+    }
+  ],
+  "related_applications":[          //links to related NATIVE apps... if you have one available
+    {
+      "platform":"play",
+      "url":"http...",
+      "is":"com.example.app1"
+    }
+  ]
+}
